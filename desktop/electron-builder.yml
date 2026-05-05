@@ -1,0 +1,34 @@
+appId: com.supermarket.desktop
+productName: Supermarket Manager
+copyright: Copyright 2026
+
+directories:
+  output: dist-electron
+  buildResources: assets
+
+files:
+  - src/main/**/*
+  - dist/**/*
+  - assets/**/*
+
+win:
+  target:
+    - nsis
+  icon: assets/icon.png
+  artifactName: ${productName}-Setup-${version}.${ext}
+
+nsis:
+  oneClick: false
+  perMachine: true
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: Supermarket Manager
+
+extraResources:
+  - from: ../backend/bin/
+    to: backend
+    filter:
+      - "*.exe"
+
+publish: null

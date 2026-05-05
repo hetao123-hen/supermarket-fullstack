@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:dev.classmethod.jp)",
+      "Bash(Remove-Item -Path \"dist\" -Recurse -Force -ErrorAction SilentlyContinue)",
+      "Bash(npx vite *)",
+      "Bash(cp -r \"C:/Users/31475/Desktop/now super from github/desktop/dist\" \"C:/Users/31475/Desktop/now super from github/desktop/dist-electron/win-unpacked/resources/app/dist\")",
+      "Bash(cp -f \"C:/Users/31475/Desktop/now super from github/desktop/dist-electron/win-unpacked/Supermarket Manager.exe\" \"C:/Users/31475/Desktop/now super from github/Supermarket Manager.exe\")",
+      "Bash(kill 1248)",
+      "Bash(taskkill -f -im \"Supermarket Manager.exe\")",
+      "Bash(npx electron-builder *)",
+      "Bash(mkdir -p \"dist-electron/win-unpacked/resources/app/src/main\")",
+      "Bash(mkdir -p \"dist-electron/win-unpacked/resources/app/dist/assets\")",
+      "Bash(cp src/main/main.js \"dist-electron/win-unpacked/resources/app/src/main/\")",
+      "Bash(cp src/main/database.js \"dist-electron/win-unpacked/resources/app/src/main/\")",
+      "Bash(cp src/main/menu.js \"dist-electron/win-unpacked/resources/app/src/main/\")",
+      "Bash(curl -s http://localhost:5173)"
+    ]
+  }
+}

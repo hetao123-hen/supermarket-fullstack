@@ -1,0 +1,64 @@
+{
+  "name": "supermarket-desktop",
+  "version": "1.0.0",
+  "description": "Supermarket Goods Management System - Desktop Edition",
+  "main": "src/main/main.js",
+  "author": "Supermarket Team",
+  "license": "MIT",
+  "scripts": {
+    "dev:renderer": "vite",
+    "dev:electron": "electron .",
+    "dev": "concurrently \"npm run dev:renderer\" \"wait-on http://localhost:5173 && npm run dev:electron\"",
+    "build:renderer": "vite build",
+    "build": "npm run build:renderer && electron-builder",
+    "build:dir": "npm run build:renderer && electron-builder --dir",
+    "build:win": "npm run build:renderer && electron-builder --win",
+    "preview": "vite preview"
+  },
+  "build": {
+    "appId": "com.supermarket.desktop",
+    "productName": "Supermarket Manager",
+    "directories": {
+      "output": "dist-electron"
+    },
+    "files": [
+      "src/main/**/*",
+      "dist/**/*",
+      "assets/**/*"
+    ],
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "assets/icon.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "shortcutName": "Supermarket Manager",
+      "installerIcon": "assets/icon.ico",
+      "uninstallerIcon": "assets/icon.ico",
+      "installerHeaderIcon": "assets/icon.ico"
+    },
+    "extraResources": [
+      {
+        "from": "../backend/bin/",
+        "to": "backend",
+        "filter": ["*.exe"]
+      }
+    ]
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "concurrently": "^8.2.2",
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3",
+    "vite": "^5.3.1",
+    "wait-on": "^7.2.0"
+  }
+}

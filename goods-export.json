@@ -1,0 +1,86 @@
+[
+  {
+    "id": "123",
+    "name": "ccc",
+    "purchase_price": 54,
+    "original_sell_price": 64,
+    "discount": 1,
+    "quantity": 416,
+    "import_time": 1777713177,
+    "discounted_sell_price": 64,
+    "profit": 4160,
+    "import_time_text": "2026-05-02 10:12:57"
+  },
+  {
+    "id": "s444",
+    "name": "ccc",
+    "purchase_price": 1313,
+    "original_sell_price": 2222,
+    "discount": 1,
+    "quantity": 1331,
+    "import_time": 1777713149,
+    "discounted_sell_price": 2222,
+    "profit": 1209879,
+    "import_time_text": "2026-05-02 10:12:29"
+  },
+  {
+    "id": "1005",
+    "name": "Imported Olive Oil",
+    "purchase_price": 8,
+    "original_sell_price": 15,
+    "discount": 0.85,
+    "discounted_sell_price": 12.75,
+    "profit": 71.25,
+    "quantity": 15,
+    "import_time": 1777367428,
+    "import_time_text": "2026-04-28 10:10:28"
+  },
+  {
+    "id": "1004",
+    "name": "Artisan Bread",
+    "purchase_price": 2,
+    "original_sell_price": 4.5,
+    "discount": 1,
+    "discounted_sell_price": 4.5,
+    "profit": 50,
+    "quantity": 20,
+    "import_time": 1777108228,
+    "import_time_text": "2026-04-25 10:10:28"
+  },
+  {
+    "id": "1002",
+    "name": "Premium Coffee Beans",
+    "purchase_price": 12,
+    "original_sell_price": 10,
+    "discount": 0.9,
+    "discounted_sell_price": 9,
+    "profit": -90,
+    "quantity": 30,
+    "import_time": 1776762628,
+    "import_time_text": "2026-04-21 10:10:28"
+  },
+  {
+    "id": "1003",
+    "name": "Whole Milk 1L",
+    "purchase_price": 1.2,
+    "original_sell_price": 2,
+    "discount": 1,
+    "discounted_sell_price": 2,
+    "profit": 40,
+    "quantity": 50,
+    "import_time": 1776676228,
+    "import_time_text": "2026-04-20 10:10:28"
+  },
+  {
+    "id": "1001",
+    "name": "Organic Apples",
+    "purchase_price": 3.5,
+    "original_sell_price": 5,
+    "discount": 0.8,
+    "discounted_sell_price": 4,
+    "profit": 50,
+    "quantity": 100,
+    "import_time": 1776589828,
+    "import_time_text": "2026-04-19 10:10:28"
+  }
+]

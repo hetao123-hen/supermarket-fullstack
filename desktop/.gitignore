@@ -1,0 +1,21 @@
+node_modules/
+dist/
+dist-electron/
+.vite/
+
+# Data files
+data/*.json
+data/*.db
+data/*.data
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
